@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context="com.example.averma1212.popular_movies.childActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/child_title"
+        android:textSize="42sp"
+        android:textStyle="italic"
+        android:gravity="center"/>
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/child_img"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/child_title"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/child_title"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/child_img" >
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+            <TableRow android:layout_marginBottom="10dp">
+                <TextView
+                    android:text="@string/child_votes"
+                    android:padding="3dip"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/child_votes"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:textSize="16sp"/>
+            </TableRow>
+
+            <TableRow android:layout_marginBottom="10dp">
+                <TextView
+                    android:text="@string/child_lang"
+                    android:padding="3dip"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/child_lang"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:textSize="16sp"/>
+            </TableRow>
+
+            <TableRow android:layout_marginBottom="10dp">
+                <TextView
+                    android:text="@string/child_date"
+                    android:padding="3dip"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/child_date"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:textSize="16sp"/>
+            </TableRow>
+        </TableLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/desc_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/child_desc"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:padding="8dp"
+        android:textStyle="bold|italic"
+        android:layout_below="@id/child_img"/>
+
+
+
+    <TextView
+        android:id="@+id/child_desc"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/desc_title"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Popular Movies</string>
+    <string name="child_desc">Plot synopsis</string>
+    <string name="child_votes">Vote Average</string>
+    <string name="child_lang">Language</string>
+    <string name="child_date">Release Date</string>
+    <string name="menu_rating">Sort By Ratings</string>
+    <string name="menu_popularity">Sort By Popularity</string>
+    <string name="error_msg">Failed to connect to Internet!</string>
+    <string name="fetch_data">Fetching data from Internet ...</string>
+    <string name="movie_details">Movie Details</string>
+</resources>
